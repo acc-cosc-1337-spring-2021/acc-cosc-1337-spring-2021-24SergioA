@@ -8,8 +8,6 @@
 //call both get_letter_grade_using_if and get_letter_grade_using_switch 
 //functions to display the letter grade to screen otherwise display number out of range.
 
-
-
 int main() 
 {
 	// If - else statament
