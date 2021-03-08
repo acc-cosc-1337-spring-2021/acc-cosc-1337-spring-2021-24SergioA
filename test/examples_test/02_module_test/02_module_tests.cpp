@@ -24,8 +24,10 @@ decimal portion*/
 /*Test int overflow to show adding 1 to 2147483647 returns -2147483648*/
 
 /*Test get radius of a circle with 10 to show that it returns 314.159*/
-
+TEST_CASE("Test to convert to double", "int * double, int converted to double")
+{
+	REQUIRE(convert_to_double(10, .35) == 3.5);
+}
 /*Test int data size */
 
 /*Test multi assign addition*/
-
