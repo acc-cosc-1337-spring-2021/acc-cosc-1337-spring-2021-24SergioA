@@ -9,27 +9,27 @@ std::string get_letter_grade_using_if (int grade)
 {
 	if (grade >= 90 && grade <= 100)
 	{
-		std::cout<<  "A";
+		return "A";
 	}
 	else if (grade >= 80 && grade <= 89)
 	{
-		std::cout<< "B";
+		return "B";
 	}
 	else if (grade >= 70 && grade <= 79)
 	{
-		std::cout<< "C";
+		return "C";
 	}
 	else if (grade >= 60 && grade <= 69)
 	{
-		std::cout<< "D";
+		return "D";
 	}
 	else if (grade >= 0 && grade <= 59)
 	{
-		std::cout<< "F";
+		return "F";
 	}
 	else
 	{
-		std::cout<< "Invalid";
+		return "Invalid";
 	}
 }
 

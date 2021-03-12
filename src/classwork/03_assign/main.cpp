@@ -10,22 +10,29 @@
 
 int main() 
 {
+	// Add space when starting
+	std::cout<<"\n";
+
 	// If - else statament
 	int grade1;
 
-	std::cout<<"What's the test grade ";
+	std::cout<<"What's the test grade? ";
 	std::cin>>grade1;
+	
+	std::cout << "Grade of " << grade1 << " is: " << get_letter_grade_using_if(grade1) <<"\n";  
+	//std::cout<<get_letter_grade_using_if(grade1);
 
-	std::cout<<get_letter_grade_using_if(grade1);
-
+	std::cout<<"\n";
 
 	// Switch - Statement
 	int grade2;
 
-	std::cout<<"What's the test grade ";
+	std::cout<<"What's the test grade? ";
 	std::cin>>grade2;
 
-	std::cout<<get_letter_grade_using_switch (grade2);
+	std::cout << "Grade of " << grade2 << " is: " << get_letter_grade_using_switch (grade2) <<"\n";  
+
+	std::cout<<"\n";
 
 	return 0;
 }
