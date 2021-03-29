@@ -1,6 +1,10 @@
 //write include statements
+#include<iostream>
+#include<string>
+#include "decisions.h"
 
 //write using statements
+using std::cout; using std::cin; using std::string;
 
 
 /*
