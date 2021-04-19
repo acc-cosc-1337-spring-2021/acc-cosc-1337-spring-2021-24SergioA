@@ -13,7 +13,7 @@ int main()
 	// Add space when starting
 	std::cout<<"\n";
 
-	// If - else statament
+	// If - else statament ----------------------------
 	int grade1;
 
 	std::cout<<"What's the test grade? ";
@@ -24,7 +24,7 @@ int main()
 
 	std::cout<<"\n";
 
-	// Switch - Statement
+	// Switch - Statement ----------------------------
 	int grade2;
 
 	std::cout<<"What's the test grade? ";
