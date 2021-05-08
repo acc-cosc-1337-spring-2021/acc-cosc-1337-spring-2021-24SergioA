@@ -18,7 +18,6 @@ void TicTacToe::start_game( string first_player )
 
 }
 
-
 // Display Board
 void TicTacToe::display_board()const
 {
@@ -51,32 +50,28 @@ void TicTacToe::display_board()const
 void TicTacToe::mark_board( int position )
 {
     // putting X's & O's on board
-    while(!(game_over()))
+     while(!(game_over()))
     {
-    cout << "Enter a position from 1 to 9," << " Player: " << get_player() << "\n";
-    cin >> position;
-
-    }
-
-    // if position is wrong
-    while ( position < 1 || position > 9 )
-    {
-        cin.clear();
-        cout << "try again, a number between 1 and 9: ";
+        cout << "Enter a position from 1 to 9," << " Player " << get_player() << ": ";
         cin >> position;
 
-    }
+        // if position is wrong
+        while ( position < 1 || position > 9 )
+        {
+            cin.clear();
+            cout << "try again, a number between 1 and 9: ";
+            cin >> position;
+        }
 
-    // changes value starting ( - ) to value to new value ( X or O)
-    brd[position - 1] = player; 
+        // changes value starting ( - ) to value to new value ( X or O)
+        brd[position - 1] = player; 
 
-    cout << "\n"; // --------------- for formating
-
-    // Display updated board
-    cout << "\n"; // --------------- for formating
-    display_board();
-    set_next_player();
+        // Display updated board
+        cout << "\n"; // --------------- for formating
+        display_board();
+        set_next_player();
     
+    }
 
     // Game ends
     if ( game_over() )
