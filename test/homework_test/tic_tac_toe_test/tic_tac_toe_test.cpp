@@ -23,7 +23,7 @@ TEST_CASE("Test Player Input")
 	TicTacToe game;
 
 	string p = "W";
-	game.start_game("p");
+	game.start_game(p);
 	game.mark_board('3');    //game.start_game("p")
 
 }
