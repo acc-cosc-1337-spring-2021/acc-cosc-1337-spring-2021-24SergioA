@@ -30,5 +30,7 @@ class TicTacToe
                 bool check_diagonal_win();
                 void set_winner();
                 string winner;
-
+                
+                // #8
+                
 };
